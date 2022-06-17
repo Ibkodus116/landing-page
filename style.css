@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+}
+
+body{
+    /* background: hsl(208, 11%, 55%); */
+    background: #ebebeb;
+    width: 1440px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 1em 3em; */
+}
+.logo-head{
+    margin: 2.5em 4em 2.5em 4.7em;
+}
+.bg-img{
+    background: #ebfbff;
+    background-image: url(desktop.svg);
+    margin-bottom: 8em;
+}
+
+.try{
+    font-weight: bold;
+    width: 10em;
+    height: 2.5em;
+    border-radius: 1.5em;
+    margin: 3em 7.7em;
+    background: white; 
+    border: 0;
+    cursor: pointer;
+    /* color: blue; */
+    box-shadow: -1px 2px 3px 1px rgba(226, 224, 224, 0.399);
+}
+.try:hover{
+    color: rgba(51, 51, 51, 0.577);
+}
+
+.container{
+    display: flex;
+}
+
+.box{
+    margin: 0 4.75em 4em 4.75em;
+}
+h1{
+    font-size: 2.5em;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    /* padding: 5em; */
+}
+.talks{
+    font-size: 2em;
+}
+
+.text{
+    text-align:left;
+    line-height: 1.5em;
+}
+
+.pink{
+    background: #ff52bf;
+    width: 15em;
+    color: white;
+    font-weight: bold;
+    height: 3em;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+}
+
+.pink:hover{
+    background: #b95e98d6;
+}
+
+.swap{
+    flex-direction: row-reverse;
+}
+.normal, .swap{
+    width: 80%;
+    height: 22em;
+    margin: 0 auto;
+    margin-top: 2em;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.277);
+    background: #fffafa;
+    border-radius: 8px;
+    padding-top: 3em;
+    padding-right: 0;
+}
+
+.img4, .img2{
+    margin-right: 2.5em;
+}
+.text4, .text2{
+    margin-top: 5em;
+}
+
+.text3{
+    margin-top: 5em;
+    margin-right: 2.5em;
+}
+
+.float{
+    /* margin: 6em 30em 0; */
+    width: 25em;
+    max-width: 25em;
+    text-align: center;
+    padding: 2.5em 0;
+    background: white;
+    box-shadow: -1px 2px 5px 1px rgba(166, 160, 160, 0.277);
+    border-radius: 0.5em;
+    font-weight: bold;
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    top: 130em;
+    left: 0;
+    right: 0;
+    /* margin-top: 5em; */
+    /* left: 50%; */
+    /* bottom: 1em; */
+    /* right: 50%; */
+}
+
+footer{
+    margin-top: 15em;
+    /* background: hsl(22, 96%, 26%); */
+    background: hsl(192, 100%, 9%);
+    padding-top: 10em;
+    padding-bottom: 7em;
+}
+.down{
+    justify-content: left;
+    color: white;
+    padding-left: 10em;
+}
+
+.foot1{
+    font-size: 15px;
+    text-align: left;
+    width: 300px;
+    margin-right: 5em;
+    line-height: 1.5em;
+    /* border: 2px solid; */
+    padding-right: 10px;
+}
+a,.foot2{
+    /* font-size: 15px; */
+    /* text-align: left; */
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    width: 200px;
+    margin-right: 1em;
+    line-height: 1.5em;
+    /* border: 2px solid; */
+    /* padding-right: 10px; */
+}
+a:hover{
+    text-decoration: underline;
+}
+.logo-foot{
+    margin-left: 10em;
+    margin-bottom: 2em;
+}
+.location{
+    margin-left: 0.5em;
+    margin-right: 0.5em;    
+}
+.test{
+    display: flex;
+}
+.pass{
+    margin-left: 0.5em;
+}
+
+.pass img{
+    margin-right: 0.5em;
+    
+}
+
+.copy{
+    text-align: right;
+    color: white;
+    margin-right: 3em;
+    font-size: 12px;
+}
+.tweet path:hover{
+    fill: #ff52bf;
+    cursor: pointer;
+}
+
+.insta path:hover{
+    fill: #ff52bf;
+    cursor: pointer;
+}
+.face path:hover{
+    fill: #ff52bf;
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+    body{
+        width: 375px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .talks{
+        font-size: 1.2em;
+    }
+    .container{
+        flex-direction: column;
+        /* margin: 0;
+        padding: 0; */
+    }
+    h1{
+        font-size: 1.5em;
+        line-height: 1.5em;
+        text-align: center;
+        /* margin-top: -60px; */
+    }
+
+    .text{
+        text-align: center;
+        font-size: 15px;
+    }
+    .box{
+        margin: 2em;       
+        text-align: center;
+    }
+
+    .pink{
+        margin-top: 1.5em;
+    }
+    .app{
+        width: 300px;
+        height: 200px;
+    }
+    .image{
+        width: 250px;
+        height: 200px;
+        margin-top: -40px;
+        margin-left: -20px;
+    }
+    .normal, .swap{
+        height: 27em;
+        width: 320px;
+    }
+    .user{
+        margin-top: -10px;
+        margin-left: 35px;
+    }
+    .float{
+        top: 152em;
+        width: 18em;
+        height: 5em;
+    }
+    .logo-head{
+        margin-left: 1em;
+    }
+    .try{
+        margin-left: 4em;
+        width: 10em;
+    }
+    .down{
+        justify-content: left;
+        padding: 2em;
+    }
+    .foot1{
+        margin-bottom: 5em;
+    }
+    .social{
+        /* margin-left: 2em; */
+        position: absolute;
+        margin-right: auto;
+        margin-left: auto;
+        top: 244.5em;
+        left: 0;
+        right: 0;
+    }
+    footer{
+        margin-top: 12em;
+    }
+    .copy{
+        text-align: center;
+        margin-top: 9em;
+    }
+    .logo-foot{
+        margin: 0;
+        margin-left: 2.4em;
+    }
+}
